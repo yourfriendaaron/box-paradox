@@ -15,7 +15,7 @@ Solution and explanation can be found on [Wiki](https://en.wikipedia.org/wiki/Be
 
 This program runs the simulation any numbers of times you select under the following rule: it will always guess the same color coin it just drew. At the end it outputs a percent accuracy. This accuracy converges on the correct answer found on the Wiki page above.
 
-Note: Setting over 1,000,000 simulations may take quite some time.
+Note: Running over 1,000,000 simulations may take quite some time.
 
 ###box paradox game.py v0.1
 
