@@ -1,4 +1,4 @@
-#Bertrand's Box Paradox v0.1
+#Bertrand's Box Paradox
 ### *A model and game*
 
 These are two Python programs that replicate Bertrand's Box Paradox.
@@ -11,10 +11,27 @@ The "paradox" can be summarized like this...
 
 Solution and explanation can be found on [Wiki](https://en.wikipedia.org/wiki/Bertrand%27s_box_paradox).
 
-###box paradox model.py
+###box paradox model.py v0.2
 
-This program runs the simulation 10,000 times under the following rule: it will always guess the same color coin it just drew. At the end it outputs a percent accuracy. This accuracy converges on the correct answer found on the Wiki page above.
+This program runs the simulation any numbers of times you select under the following rule: it will always guess the same color coin it just drew. At the end it outputs a percent accuracy. This accuracy converges on the correct answer found on the Wiki page above.
 
-###box paradox game.py
+Note: Setting over 1,000,000 simulations may take quite some time.
+
+###box paradox game.py v0.1
 
 This allows you to play the game yourself. It first randomizes which of the three boxes are selected, and them randomly draws a coin from the box for you. You can then input your guess of what you think the other coin in the box will be. It reports your success (or failure), and keeps track of your accuracy.
+
+####Model Changelog
+
+v0.2
+* Asks user for number of simulations to run.
+* Deleted some unnecessary code
+* TODO: Keep track of individual gold & silver accuracy, not just total accuracy
+
+v0.1
+* Initial build
+
+####Game Changelog
+
+v0.1
+* Initial build

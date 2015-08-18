@@ -1,12 +1,11 @@
 import random
-import re
 
 playagain = 'y'
 numright = 0
 numwrong = 0
-g = re.compile('G', re.IGNORECASE)
-s = re.compile('S', re.IGNORECASE)
 n = 0
+
+numsims = int(input('How many times to run the simulation?'))
 
 def samebox(boxtype, rightcoin):
     print('you have drawn a', boxtype, 'coin.')
@@ -41,7 +40,7 @@ def diffbox():
         global numwrong
         numwrong += 1
 
-while n <= 10000:
+while n <= numsims:
     box = random.choice(['box SS', 'box SG', 'box GG'])
     print(box)
     if box == 'box SS':
@@ -52,7 +51,5 @@ while n <= 10000:
         diffbox()
     n += 1
 
-accuracy = (numright / (numright + numwrong)) * 100
-
-print('Your overall accuracy was', accuracy, '%')
+print('Your overall accuracy was', (numright / (numright + numwrong)) * 100, '%')
 input('Thanks for playing! Press Enter to exit...')
