@@ -17,9 +17,11 @@ This program runs the simulation any numbers of times you select under the follo
 
 Note: Running over 1,000,000 simulations may take quite some time.
 
-###box paradox game.py v0.1
+###box paradox game.py v0.2
 
-This allows you to play the game yourself. It first randomizes which of the three boxes are selected, and them randomly draws a coin from the box for you. You can then input your guess of what you think the other coin in the box will be. It reports your success (or failure), and keeps track of your accuracy.
+Here you can actually play the game yourself. You select a box and draw a coin from the box. You can then input your guess of what you think the other coin in the box will be. It reports your success (or failure), and keeps track of your accuracy.
+
+Super secret tip: there's a way to cheat in this game and know the box that's been selected *before* making your guess.
 
 ####Model Changelog
 
@@ -32,6 +34,12 @@ v0.1
 * Initial build
 
 ####Game Changelog
+
+v0.2
+* Changed text and other text throughout
+* Added super basic ASCII art
+* Rejiggered quit method
+* *Possibly* added a special secret way to cheat.
 
 v0.1
 * Initial build
