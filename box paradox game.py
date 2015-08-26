@@ -1,3 +1,9 @@
+'''
+Bertand's Box Paradox: The Game
+Version 0.21
+further info: https://en.wikipedia.org/wiki/Bertrand%27s_box_paradox
+'''
+
 import random
 import re
 
