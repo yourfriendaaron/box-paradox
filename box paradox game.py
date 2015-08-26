@@ -4,9 +4,9 @@ import re
 playagain = 'y'
 numright = 0
 numwrong = 0
-g = re.compile('G', re.IGNORECASE)
-s = re.compile('S', re.IGNORECASE)
-yes = re.compile('YES', re.IGNORECASE)
+g = re.compile('G$', re.IGNORECASE)
+s = re.compile('S$', re.IGNORECASE)
+yes = re.compile('YES$', re.IGNORECASE)
 cheat = False
 quitgame = False
 
@@ -49,7 +49,9 @@ def diffbox():
         numwrong += 1
 
 while True:
-    startgame = str(input('There are three boxes in front of you.\nOne has two silver coins, another has a silver and a gold coin, and the remaining box contains two gold coins.\nWould you like to play a game? Type YES to continue...\n'))
+    startgame = str(input('''There are three boxes in front of you.'
+'One has two silver coins, another has a silver and a gold coin, and the remaining box contains two gold coins.'
+'Would you like to play a game? Type YES to continue...\n'''))
     if yes.match(startgame):
         break
     if startgame == 'UUDDLRLRBA':
@@ -61,7 +63,14 @@ while quitgame != 'Q':
     |       |    |       |    |       |
     | box 1 |    | box 2 |    | box 3 |
     |_______|    |_______|    |_______|''')
-    input('Select a box. Enter 1 2 or 3...\n')
+    while True:
+        try:
+            one23 = int(input('Select a box. Enter 1 2 or 3...\n'))
+        except ValueError:
+            pass
+        else:
+            if 1 <= one23 <= 3:
+                break
     box = random.choice(['box SS', 'box SG', 'box GG'])
     if cheat == True:
         print(box)
@@ -71,7 +80,7 @@ while quitgame != 'Q':
         samebox('gold', 'G')
     if box == 'box SG':
         diffbox()
-    quitgame = input('Press Enter to play again or type Q to quit and see your results...')
+    quitgame = input('Press Enter to play again or type Q to quit and see your results...\n').upper()
 
 accuracy = (numright / (numright + numwrong)) * 100
 
