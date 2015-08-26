@@ -26,7 +26,7 @@ Super secret tip: there's a way to cheat in this game and know the box that's be
 ####Model Changelog
 
 v0.2
-* Asks user for number of simulations to run.
+* Asks user for number of simulations to run
 * Deleted some unnecessary code
 * TODO: Keep track of individual gold & silver accuracy, not just total accuracy
 
@@ -36,13 +36,13 @@ v0.1
 ####Game Changelog
 
 v0.21
-* Tightened input validation throughout.
+* Tightened input validation throughout
 
 v0.2
 * Changed text and other text throughout
 * Added super basic ASCII art
 * Rejiggered quit method
-* *Possibly* added a special secret way to cheat.
+* *Possibly* added a special secret way to cheat
 
 v0.1
 * Initial build
