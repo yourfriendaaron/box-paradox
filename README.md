@@ -17,7 +17,7 @@ This program runs the simulation any numbers of times you select under the follo
 
 Note: Running more than a few hundred thousand simulations may take quite some time.
 
-###box paradox game.py v0.21
+###box paradox game.py v0.2.1
 
 Here you can actually play the game yourself. You select a box and draw a coin from the box. You can then input your guess of what you think the other coin in the box will be. It reports your success (or failure), and keeps track of your accuracy.
 
