@@ -1,6 +1,6 @@
 '''
 Bertand's Box Paradox: A Simulation
-Version 0.2
+Version 0.3
 further info: https://en.wikipedia.org/wiki/Bertrand%27s_box_paradox
 '''
 
