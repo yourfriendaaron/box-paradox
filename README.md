@@ -11,7 +11,7 @@ The "paradox" can be summarized like this...
 
 Solution and explanation can be found on [Wiki](https://en.wikipedia.org/wiki/Bertrand%27s_box_paradox).
 
-###box paradox model.py v0.2
+###box paradox model.py v0.3
 
 This program runs the simulation any numbers of times you select under the following rule: it will always guess the same color coin it just drew. At the end it outputs a percent accuracy. This accuracy converges on the correct answer found on the Wiki page above.
 
@@ -25,10 +25,17 @@ Super secret tip: there's a way to cheat in this game and know the box that's be
 
 ####Model Changelog
 
+v0.3
+* Added intro text
+* Cleaned up and simplified code
+* Cleaned up and improved text
+* Added more specific end stats
+
 v0.2
 * Asks user for number of simulations to run
 * Deleted some unnecessary code
 * TODO: Keep track of individual gold & silver accuracy, not just total accuracy
+  * NOTE: Done in v0.3
 
 v0.1
 * Initial build
