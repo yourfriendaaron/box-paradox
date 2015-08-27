@@ -24,7 +24,7 @@ def get_guess():
     return guess
 
 def samebox(boxtype, rightcoin):
-    print('You reach into the box without looking, and draw a', boxtype, 'coin.')
+    print('You reach into the box without looking and draw a', boxtype, 'coin.')
     guess = get_guess()
     input('press Enter to look at the other coin in this box...')
     if guess == rightcoin:
@@ -55,9 +55,10 @@ def diffbox():
         numwrong += 1
 
 while True:
-    startgame = str(input('''There are three boxes in front of you.'
-'One has two silver coins, another has a silver and a gold coin, and the remaining box contains two gold coins.'
-'Would you like to play a game? Type YES to continue...\n'''))
+    startgame = str(input('''
+There are three boxes in front of you.
+One has two silver coins, another has a silver and a gold coin, and the remaining box contains two gold coins.
+Would you like to play a game? Type YES to continue...\n'''))
     if yes.match(startgame):
         break
     if startgame == 'UUDDLRLRBA':
