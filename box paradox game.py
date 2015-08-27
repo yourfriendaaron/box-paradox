@@ -1,6 +1,6 @@
 '''
 Bertand's Box Paradox: The Game
-Version 0.21
+Version 0.2.1
 further info: https://en.wikipedia.org/wiki/Bertrand%27s_box_paradox
 '''
 
