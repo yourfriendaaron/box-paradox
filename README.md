@@ -42,7 +42,7 @@ v0.1
 
 ####Game Changelog
 
-v0.21
+v0.2.1
 * Tightened input validation throughout
 
 v0.2
