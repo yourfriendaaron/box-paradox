@@ -1,4 +1,4 @@
-#Bertrand's Box Paradox
+# Bertrand's Box Paradox
 ### *A model and game*
 
 These are two Python programs that replicate Bertrand's Box Paradox.
@@ -11,19 +11,19 @@ The "paradox" can be summarized like this...
 
 Solution and explanation can be found on [Wiki](https://en.wikipedia.org/wiki/Bertrand%27s_box_paradox).
 
-###box paradox model.py ![](https://img.shields.io/badge/version-0.3-green.svg)
+### box paradox model.py ![](https://img.shields.io/badge/version-0.3-green.svg)
 
 This program runs the simulation any numbers of times you select under the following rule: it will always guess the same color coin it just drew. At the end it outputs a percent accuracy. This accuracy converges on the correct answer found on the Wiki page above.
 
 Note: Running more than a few hundred thousand simulations may take quite some time.
 
-###box paradox game.py ![](https://img.shields.io/badge/version-0.2.1-green.svg)
+### box paradox game.py ![](https://img.shields.io/badge/version-0.2.1-green.svg)
 
 Here you can actually play the game yourself. You select a box and draw a coin from the box. You can then input your guess of what you think the other coin in the box will be. It reports your success (or failure), and keeps track of your accuracy.
 
 Super secret tip: there's a way to cheat in this game and know the box that's been selected *before* making your guess.
 
-####Model Changelog
+#### Model Changelog
 
 v0.3
 * Added intro text
@@ -40,7 +40,7 @@ v0.2
 v0.1
 * Initial build
 
-####Game Changelog
+#### Game Changelog
 
 v0.2.1
 * Tightened input validation throughout
